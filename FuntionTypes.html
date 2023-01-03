@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+      //function without parameters
+      function myFun() 
+      {
+        console.log("hello world!");
+      }
+     myFun();
+
+      //function with parameters
+      function add(x,y) 
+      {
+        let z=x+y;
+        return z;
+      }
+      let x = parseInt(prompt("Enter first NO"));
+      let y = parseInt(prompt("Enter Second NO"));
+     let z=add(x,y);
+      console.log(z);
+
+      //expression function
+      var multiplication = function (x,y) 
+           {
+            return x*y;
+           } 
+      console.log(multiplication(30,20));
+
+       //anonymous function
+      var num = function (x,y)
+      {
+        return x*y;
+      }
+      console.log(num(10,20));
+
+     //arrow Function
+      var arrowFunction = (x,y)=>x*y; 
+      console.log(arrowFunction(80,20));
+
+      //selfInvokingFunction
+      var selfInvokingFunction = function(x,y)
+      {
+        console.log(x*y);
+      }(19,40)
+
+    </Script>
+</body>
+</html>
